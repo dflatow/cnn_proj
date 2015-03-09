@@ -43,7 +43,7 @@ if __name__ == "__main__":
   trainer = ClassifierTrainer()
   best_model, loss_history, train_acc_history, val_acc_history = trainer.train(
           X_train, y_train_permuted, X_val, y_val, model, three_layer_convnet, update='momentum',
-          reg=0.00008, momentum=0.9, learning_rate=0.0014, batch_size=300, num_epochs=60,
+          reg=0.00008, momentum=0.9, learning_rate=0.0014, batch_size=300, num_epochs=30,
           verbose=True)
 
   fname = 'test_308_2.p'
