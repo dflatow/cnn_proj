@@ -1,0 +1,53 @@
+START
+Train data shape:  (49000, 3, 32, 32)
+Train labels shape:  (49000,)
+Validation data shape:  (1000, 3, 32, 32)
+Validation labels shape:  (1000,)
+Test data shape:  (1000, 32, 32, 3)
+Test labels shape:  (1000,)
+Finished epoch 0 / 60: cost 2.311286, train: 0.082000, val 0.095000, lr 1.400000e-03
+Finished epoch 1 / 60: cost 1.296942, train: 0.523000, val 0.545000, lr 1.330000e-03
+Finished epoch 2 / 60: cost 1.019148, train: 0.633000, val 0.600000, lr 1.263500e-03
+Finished epoch 3 / 60: cost 0.933885, train: 0.663000, val 0.624000, lr 1.200325e-03
+Finished epoch 4 / 60: cost 0.832206, train: 0.698000, val 0.659000, lr 1.140309e-03
+Finished epoch 5 / 60: cost 0.869024, train: 0.731000, val 0.671000, lr 1.083293e-03
+Finished epoch 6 / 60: cost 0.729029, train: 0.712000, val 0.677000, lr 1.029129e-03
+Finished epoch 7 / 60: cost 0.673092, train: 0.744000, val 0.685000, lr 9.776722e-04
+Finished epoch 8 / 60: cost 0.693590, train: 0.749000, val 0.678000, lr 9.287886e-04
+Finished epoch 9 / 60: cost 0.692054, train: 0.770000, val 0.697000, lr 8.823492e-04
+Finished epoch 10 / 60: cost 0.668137, train: 0.785000, val 0.692000, lr 8.382317e-04
+Finished epoch 11 / 60: cost 0.607152, train: 0.805000, val 0.694000, lr 7.963201e-04
+Finished epoch 12 / 60: cost 0.595495, train: 0.785000, val 0.696000, lr 7.565041e-04
+Finished epoch 13 / 60: cost 0.505148, train: 0.828000, val 0.714000, lr 7.186789e-04
+Finished epoch 14 / 60: cost 0.544639, train: 0.806000, val 0.696000, lr 6.827450e-04
+Finished epoch 15 / 60: cost 0.496475, train: 0.844000, val 0.712000, lr 6.486077e-04
+Finished epoch 16 / 60: cost 0.608356, train: 0.794000, val 0.686000, lr 6.161773e-04
+Finished epoch 17 / 60: cost 0.555071, train: 0.825000, val 0.715000, lr 5.853685e-04
+Finished epoch 18 / 60: cost 0.523165, train: 0.840000, val 0.709000, lr 5.561000e-04
+Finished epoch 19 / 60: cost 0.481479, train: 0.839000, val 0.712000, lr 5.282950e-04
+Finished epoch 20 / 60: cost 0.429053, train: 0.866000, val 0.727000, lr 5.018803e-04
+Finished epoch 21 / 60: cost 0.404184, train: 0.831000, val 0.706000, lr 4.767863e-04
+Finished epoch 22 / 60: cost 0.375810, train: 0.852000, val 0.710000, lr 4.529470e-04
+Finished epoch 23 / 60: cost 0.434275, train: 0.857000, val 0.708000, lr 4.302996e-04
+Finished epoch 24 / 60: cost 0.406786, train: 0.874000, val 0.717000, lr 4.087846e-04
+Finished epoch 25 / 60: cost 0.442322, train: 0.854000, val 0.707000, lr 3.883454e-04
+Finished epoch 26 / 60: cost 0.464470, train: 0.885000, val 0.725000, lr 3.689281e-04
+Finished epoch 27 / 60: cost 0.445993, train: 0.881000, val 0.719000, lr 3.504817e-04
+Finished epoch 28 / 60: cost 0.323150, train: 0.880000, val 0.720000, lr 3.329576e-04
+Finished epoch 29 / 60: cost 0.403743, train: 0.875000, val 0.703000, lr 3.163098e-04
+Finished epoch 30 / 60: cost 0.325615, train: 0.890000, val 0.713000, lr 3.004943e-04
+Finished epoch 31 / 60: cost 0.379489, train: 0.888000, val 0.704000, lr 2.854696e-04
+Finished epoch 32 / 60: cost 0.361308, train: 0.903000, val 0.711000, lr 2.711961e-04
+Finished epoch 33 / 60: cost 0.438236, train: 0.901000, val 0.713000, lr 2.576363e-04
+Finished epoch 34 / 60: cost 0.371376, train: 0.880000, val 0.702000, lr 2.447545e-04
+Finished epoch 35 / 60: cost 0.295833, train: 0.918000, val 0.699000, lr 2.325167e-04
+Finished epoch 36 / 60: cost 0.287491, train: 0.884000, val 0.704000, lr 2.208909e-04
+Finished epoch 37 / 60: cost 0.352732, train: 0.911000, val 0.702000, lr 2.098464e-04
+Finished epoch 38 / 60: cost 0.239791, train: 0.912000, val 0.708000, lr 1.993540e-04
+Finished epoch 39 / 60: cost 0.298832, train: 0.897000, val 0.708000, lr 1.893863e-04
+Finished epoch 40 / 60: cost 0.268463, train: 0.909000, val 0.708000, lr 1.799170e-04
+Finished epoch 41 / 60: cost 0.260901, train: 0.902000, val 0.713000, lr 1.709212e-04
+Finished epoch 42 / 60: cost 0.251032, train: 0.920000, val 0.709000, lr 1.623751e-04
+Finished epoch 43 / 60: cost 0.228707, train: 0.917000, val 0.714000, lr 1.542564e-04
+Finished epoch 44 / 60: cost 0.332852, train: 0.901000, val 0.709000, lr 1.465435e-04
+Finished epoch 45 / 60
