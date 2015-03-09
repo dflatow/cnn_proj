@@ -1,5 +1,5 @@
 import numpy as np
-
+import logging
 
 class ClassifierTrainer(object):
   """ The trainer class performs SGD with momentum on a cost function """
@@ -7,12 +7,12 @@ class ClassifierTrainer(object):
     self.step_cache = {} # for storing velocities in momentum update
 
   def train(self, X, y, X_val, y_val, 
-            model, loss_function, 
+            model, loss_function,
             reg=0.0,
             learning_rate=1e-2, momentum=0, learning_rate_decay=0.95,
             update='momentum', sample_batches=True,
             num_epochs=30, batch_size=100, acc_frequency=None,
-            verbose=False):
+            verbose=False, logging=None):
     """
     Optimize the parameters of a model to minimize a loss function. We use
     training data X and y to compute the loss and gradients, and periodically
@@ -52,6 +52,7 @@ class ClassifierTrainer(object):
     - val_acc_history: List storing the validation set accuracy at each epoch.
     """
 
+    logging.debug("STARTING TRAINING")
     N = X.shape[0]
 
     if sample_batches:
@@ -162,12 +163,13 @@ class ClassifierTrainer(object):
 
         # print progress if needed
         if verbose:
-          print ('Finished epoch %d / %d: cost %f, train: %f, val %f, lr %e'
+          logging.debug('Finished epoch %d / %d: cost %f, train: %f, val %f, lr %e'
                  % (epoch, num_epochs, cost, train_acc, val_acc, learning_rate))
 
     if verbose:
-      print 'finished optimization. best validation accuracy: %f' % (best_val_acc, )
+      logging.debug('finished optimization. best validation accuracy: %f' % (best_val_acc, ))
     # return the best model and the training history statistics
+    logging.debug("DONE TRAINING")      
     return best_model, loss_history, train_acc_history, val_acc_history
 
 
